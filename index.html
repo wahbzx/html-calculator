@@ -1,0 +1,58 @@
+<!--Made by Wahbi- Open source-->
+<html>
+    <head>
+        <title>Calculator By Wahbi</title>
+        <link rel="stylesheet" type="text/css" href = "styles.css">
+        <link rel="script" href = "main.js">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Wahbi's Calculator</h1>
+        <div class = "calculator-frame">
+            <!--Start Of LCD Screen-->
+            <div id="screen">
+                <input type="text" id ="textField" value="">
+            </div>
+            <!--End Of LCD Screen-->
+            <!--Start Of All the Buttons-->
+            <div id="buttonCollection">
+                <table>
+                    <tr>
+                        <td><input type="button" class="opBtn" value="C" onclick="clearScreen()"/></td>
+                        <td><input type="button" class="opBtn" value="M+" onclick=""/></td> 
+                        <td><input type="button" class="opBtn" value="/" onclick="insertVal('/')"/></td> 
+                        <td><input type="button" class="opBtn" value="x" onclick="insertVal('X')"/></td>  
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="numBtn" value="7" onclick="insertVal('7')"/></td>
+                        <td><input type="button" class="numBtn" value="8" onclick="insertVal('8')"/></td> 
+                        <td><input type="button" class="numBtn" value="9" onclick="insertVal('9')"/></td> 
+                        <td><input type="button" class="opBtn" value="+" onclick="insertVal('+')"/></td>  
+                    </tr>
+                    <tr>
+                            <td><input type="button" class="numBtn" value="4" onclick="insertVal('4')"/></td>
+                            <td><input type="button" class="numBtn" value="5" onclick="insertVal('5')"/></td> 
+                            <td><input type="button" class="numBtn" value="6" onclick="insertVal('6')"/></td> 
+                            <td><input type="button" class="opBtn" value="-" onclick="insertVal('-')"/></td>  
+                    </tr>
+                    <tr>
+                            <td><input type="button" class="numBtn" value="1" onclick="insertVal('1')"/></td>
+                            <td><input type="button" class="numBtn" value="2" onclick="insertVal('2')"/></td> 
+                            <td><input type="button" class="numBtn" value="3" onclick="insertVal('3')"/></td> 
+                            <td rowspan="2"><input type="button" id= "equalsButton"class="opBtn" value="=" onclick="calculate()"/><div></td>  
+                    </tr>
+                    <tr>
+                            <td colspan="2"><input type="button" style="width:100%;" class="numBtn" value="0" onclick="insertVal('0')"/></td>
+                            <td><input type="button" class="numBtn"  value="." onclick="insertVal('.')"/></td> 
+                    </tr>
+                </table>
+            </div>
+            <!--End Of All the Buttons-->
+        </div>
+        <div>
+            <footer>    
+                <section>By Wahbi   </section>     
+            </footer>
+        </div>
+    </body>
+</html>
